@@ -1,0 +1,710 @@
+* {
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+   font-family: "Poppins Regular";
+   src: url("fonts/Poppins-Regular.eot");
+   src: url("fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"),
+      url("fonts/Poppins-Regular.woff") format("woff"), url("fonts/Poppins-Regular.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+/* Стили для шапки */
+.container {
+   max-width: 1170px;
+   margin: auto;
+}
+
+header {
+   height: 50px;
+   background-color: #ba0000;
+}
+
+.header__wrap {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.contact__wrap {
+   margin-left: 819px;
+   margin-right: 21px;
+}
+
+.language__title,
+.contact__center,
+.country__profile {
+   font-family: "Poppins Regular";
+   color: #ffffff;
+   letter-spacing: 0.42px;
+   font-size: 14px;
+   text-decoration: none;
+}
+
+/* Стили для блока с навигационной панелью */
+.navbar {
+   height: 120px;
+   background-color: #ffcc00;
+}
+
+.navbar__wrap {
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar__list {
+   display: flex;
+   list-style: none;
+   margin-right: 208px;
+   color: #ba0000;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 24px;
+   text-transform: uppercase;
+}
+
+.navbar__list > li > a {
+   margin-left: 48px;
+   font-family: "Poppins Regular";
+   color: #ba0000;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 24px;
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: all 0.4s;
+}
+
+.navbar__list > li > a:hover {
+   color: #ffffff;
+}
+
+.navbar__search {
+   width: 50px;
+   height: 50px;
+   box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4);
+   border-radius: 25px;
+   background-color: #ba0000;
+   outline: none;
+   border: none;
+   transition: all 0.4s;
+}
+
+.navbar__search:hover {
+   box-shadow: 0 10px 18px rgba(186, 0, 0, 0.5);
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+/* Стили для блока с быстрой доставкой */
+.speed__deliver {
+   height: 800px;
+   background: url("images/Speed_deliver_bcg.png") no-repeat center, url("images/Speed_deliver.png") no-repeat center;
+   background-color: #c0c0c0;
+}
+
+.deliver__wrap > span {
+   display: block;
+}
+
+.deliver__wrap {
+   display: flex;
+   flex-direction: column;
+}
+
+.deliver__header {
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 70px;
+   font-weight: 400;
+   line-height: 80px;
+   letter-spacing: 2.1px;
+   margin-top: 179px;
+}
+
+.deliver__line {
+   margin-top: 55px;
+   width: 100px;
+   height: 4px;
+   background-color: #ffcc00;
+   border: none;
+}
+
+.deliver__title {
+   margin-top: 37px;
+   color: #ffcc00;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 0.6px;
+}
+
+.deliver__list {
+   margin-top: 40px;
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+   letter-spacing: 0.6px;
+}
+
+.deliver__list > span {
+   color: #ffcc00;
+   letter-spacing: 0.6px;
+   margin: 0 28px 0 28px;
+}
+
+.deliver__buttons {
+   margin-top: 40px;
+}
+
+.learn__more {
+   width: 150px;
+   height: 50px;
+   box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
+   border-radius: 25px;
+   background-color: #ffcc00;
+   outline: none;
+   border: none;
+   /* Текст внутри */
+   color: #ba0000;
+   font-family: "Poppins Regular";
+   font-size: 12px;
+   font-weight: 800;
+   line-height: 30px;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+   margin-right: 20px;
+   transition: all 0.4s;
+}
+
+.learn__more:hover {
+   box-shadow: 0 10px 18px rgba(255, 204, 0, 0.5);
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.dhl__worldwide {
+   width: 192px;
+   height: 50px;
+   border-radius: 25px;
+   background-color: Transparent;
+   border: 2px solid #ffffff;
+   outline: none;
+   /* Текст внутри */
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+   transition: all 0.4s;
+}
+
+.dhl__worldwide:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+/* Стили для блока с сервисами */
+.services {
+   height: 732px;
+}
+
+.services__wrap {
+   display: flex;
+   flex-direction: column;
+}
+
+.services__print {
+   margin-top: 100px;
+   color: #f8f8f8;
+   font-family: "Poppins Regular";
+   font-size: 150px;
+   font-weight: 400;
+   line-height: 80px;
+   text-transform: uppercase;
+   letter-spacing: 4.5px;
+}
+
+.services__print2 {
+   position: relative;
+   margin-top: -70px;
+   color: #ba0000;
+   font-family: "Poppins Regular";
+   font-size: 50px;
+   font-weight: 400;
+   line-height: 80px;
+   letter-spacing: 1.5px;
+}
+
+.services__content {
+   margin-top: 78px;
+   display: flex;
+}
+
+.services__header {
+   margin-top: -4px;
+   margin-bottom: -15px;
+   color: #ba0000;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 80px;
+   text-transform: uppercase;
+   letter-spacing: 0.6px;
+}
+
+.read__more {
+   margin-top: 15px;
+   display: block;
+   text-decoration: none;
+   color: #222222;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   font-family: "Poppins Regular";
+   letter-spacing: 0.48px;
+}
+
+.services__text {
+   color: #777777;
+   font-family: "Poppins Regular";
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0.48px;
+}
+
+.express__services,
+.parcel__ecommerce,
+.frieght__transport {
+   margin-right: 30px;
+}
+
+.read__more {
+   color: #222222;
+   font-family: "Poppins Regular";
+   font-size: 16px;
+   font-weight: 900;
+   line-height: 26px;
+   letter-spacing: 0.48px;
+}
+
+.read__more:hover {
+   color: #ffcc00;
+}
+
+.services__worldwide {
+   margin-right: 0px;
+   width: 270px;
+   height: 339px;
+   background-color: #ba0000;
+}
+
+.services__worldwide > h1 {
+   margin-top: 30px;
+   margin-left: 30px;
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 0.6px;
+}
+
+.services__worldwide > hr {
+   width: 70px;
+   height: 2px;
+   background-color: #ffcc00;
+   border: none;
+   margin-left: 30px;
+   margin-top: 30px;
+}
+
+.services__worldwide > p {
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: 0.48px;
+   margin-left: 30px;
+   margin-top: 30px;
+}
+
+.services__location {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 210px;
+   height: 50px;
+   background-color: #9d0000;
+   margin-left: 30px;
+}
+
+.services__location > span {
+   padding-left: 21px;
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 80px;
+   letter-spacing: 0.48px;
+}
+
+.location__button {
+   width: 50px;
+   height: 50px;
+   background-color: #ffcc00;
+   border: none;
+   outline: none;
+   transition: all 0.4s;
+}
+
+.location__button:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.services__explore {
+   margin-top: 20px;
+   margin-left: 30px;
+}
+
+/* Стили для блока с провайдерами */
+.provider {
+   height: 700px;
+   background: url("images/provider__bcg.png") no-repeat center, url("images/provider.png") no-repeat center;
+}
+
+.provider__wrap {
+   display: flex;
+   flex-direction: column;
+}
+
+.provider__header {
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 48px;
+   font-weight: 400;
+   letter-spacing: 1.5px;
+   text-align: center;
+   margin-top: 150px;
+}
+
+.provider__button {
+   width: 70px;
+   height: 70px;
+   box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
+   border-radius: 35px;
+   border: 2px solid #ffcc00;
+   background-color: #ffcc00;
+   outline: none;
+   border: none;
+   margin: 0 auto;
+   margin-top: 50px;
+   transition: all 0.4s;
+}
+
+.provider__button:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.provider__services {
+   display: flex;
+   margin-top: 175px;
+   justify-content: space-between;
+}
+
+.service__card {
+   width: 370px;
+   height: 409px;
+   box-shadow: 0 10px 18px rgba(191, 191, 191, 0.4);
+   background-color: #ffffff;
+}
+
+.service__card > span {
+   display: block;
+   color: #ba0000;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 0.6px;
+   padding-left: 30px;
+   margin-top: 30px;
+}
+
+.service__card > ul {
+   color: #777777;
+   font-family: "Poppins Regular";
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   list-style: none;
+   padding-left: 30px;
+   margin-top: 30px;
+}
+
+.service__card > ul > li > img {
+   margin-right: 9px;
+}
+
+/* Стили для блока с формой */
+.form {
+   height: 943px;
+}
+
+.form__wrap {
+   display: flex;
+   justify-content: space-between;
+}
+
+.express__form,
+.form__image {
+   margin-top: 309px;
+}
+
+.express__form {
+   display: flex;
+   flex-direction: column;
+   width: 570px;
+   height: 533px;
+   background-color: #ba0000;
+}
+
+.buttons__wrap {
+   display: flex;
+}
+
+.logistics__button {
+   width: 285px;
+   height: 50px;
+   background-color: #ffcc00;
+   border: none;
+   outline: none;
+   color: #ba0000;
+   font-family: "Poppins Regular";
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 1.4px;
+}
+
+.express__button {
+   width: 285px;
+   height: 50px;
+   background-color: #ba0000;
+   border: none;
+   outline: none;
+   color: white;
+   font-family: "Poppins Regular";
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 1.4px;
+}
+
+.express__button:focus + .logistics__button {
+   background-color: #ba0000;
+   color: white;
+}
+
+.form__content {
+   margin-top: 40px;
+}
+
+.form__option {
+   display: flex;
+   margin: 0 auto 20px auto;
+   justify-content: space-between;
+   width: 489px;
+   height: 50px;
+   border: 2px solid #ffffff;
+   background-color: transparent;
+}
+
+.form__option > span {
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   height: 10px;
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.42px;
+   padding-left: 20px;
+   padding-top: 16px;
+}
+
+.form__option > button {
+   width: 50px;
+   height: 46px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   border-left: 2px solid #ffffff;
+   cursor: pointer;
+}
+
+/* Стили для блока с превосходством */
+.excellence {
+   height: 350px;
+   background-color: #ba0000;
+}
+
+.excellence__wrap {
+   height: 350px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.excellence__text > h1 {
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 30px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.9px;
+}
+
+.excellence__text > span {
+   display: block;
+   margin-top: 41px;
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 16px;
+   font-weight: 400;
+   letter-spacing: 0.48px;
+}
+
+.excellence__button {
+   width: 150px;
+   height: 50px;
+   border-radius: 25px;
+   background-color: #a00000;
+   border: none;
+   outline: none;
+   color: #ffffff;
+   font-family: "Poppins Regular";
+   font-size: 12px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+   transition: all 0.4s;
+}
+
+.excellence__button:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+/* Стили для блока с природой */
+.nature {
+   height: 270px;
+}
+
+.nature__wrap {
+   height: 270px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nature__types {
+   display: flex;
+   align-items: center;
+   width: 270px;
+   height: 129px;
+   border: 2px solid rgba(186, 0, 0, 0.1);
+}
+
+.nature__types:hover {
+   border: 2px solid #ba0000;
+}
+
+.nature__types > img {
+   margin: 0 auto;
+}
+
+/* Стили для подвала */
+footer {
+   height: 311px;
+}
+
+.container__footer {
+   max-width: 1840px;
+   margin: auto;
+}
+
+.truck__1 {
+   float: left;
+}
+
+.truck__2 {
+   float: right;
+}
+
+.footer__wrap {
+   height: 311px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.footer__contact > h1 {
+   color: #ba0000;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.6px;
+}
+
+.footer__contact > ul {
+   margin-top: 40px;
+   list-style: none;
+   padding-left: 0;
+}
+
+.footer__contact > ul > li > a {
+   text-decoration: none;
+   color: #777777;
+   font-family: "Poppins Regular";
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.42px;
+}
+
+.footer__contact > ul > li > a:hover {
+   color: #ffcc00;
+}
+
+.social__media {
+   text-decoration: none;
+   color: #777777;
+   font-family: "Poppins Regular";
+   font-size: 14px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.42px;
+}
+
+.social__media:hover {
+   color: #017edf;
+}
+
+.footer__contact > ul > li > img {
+   margin-right: 3px;
+}
